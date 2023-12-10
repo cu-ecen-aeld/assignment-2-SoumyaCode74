@@ -37,6 +37,7 @@ if [ -f conf/assignment.txt ]; then
         rc=$?
         if [ $rc -eq 0 ]; then
             echo "Test of assignment ${assignment} complete with success"
+            exit 0
         else
             echo "Test of assignment ${assignment} failed with rc=${rc}"
             exit $rc
